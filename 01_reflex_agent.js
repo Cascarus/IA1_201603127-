@@ -26,8 +26,6 @@ function test(states){
 		console.log(states);
 		if(states[1] == "CLEAN" && states[2] == "CLEAN"){
 			console.log("FIN");
-		}else{
-			setTimeout(function(){ test(states); }, 2000);
 		}
 		
 		document.getElementById("log").innerHTML+="<br>Location: ".concat(location).concat(" | Action: ").concat(action_result);
