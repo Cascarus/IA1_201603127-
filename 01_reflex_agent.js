@@ -24,10 +24,6 @@ function test(states){
 		var random = Math.round(Math.random()) + 1;
 		states[random] = "DIRTY";
 		console.log(states);
-		if(states[1] == "CLEAN" && states[2] == "CLEAN"){
-			console.log("FIN");
-		}
-		
 		document.getElementById("log").innerHTML+="<br>Location: ".concat(location).concat(" | Action: ").concat(action_result);
 		setTimeout(function(){ test(states); }, 2000);
 		conta = conta + 1;
